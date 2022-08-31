@@ -6,7 +6,8 @@ function funca(){
     if(usuario==""|| contraseña==""){
         alert("Complete los campos vacios")
     }
-    else(
-        location.href= "index.html"
-    )
+    else{
+        localStorage.setItem("Usuario", usuario);
+        location.href= "index.html";
+    }
 }

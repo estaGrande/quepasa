@@ -11,4 +11,11 @@ document.addEventListener("DOMContentLoaded", function(){
         localStorage.setItem("catID", 103);
         window.location = "products.html"
     });
+    let a = localStorage.getItem("Usuario");
+    if (a!=""){
+        document.querySelector("#profile").innerHTML= a
+    }else{
+        alert("asas")
+        location.href= "logim.html"
+    }
 });

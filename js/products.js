@@ -1,4 +1,5 @@
-const Opa = "https://japceibal.github.io/emercado-api/cats_products/101.json";
+let catId = localStorage.getItem("catID")
+const Opa = "https://japceibal.github.io/emercado-api/cats_products/"+catId+".json";
 
 let categoriesArray = [];
 
