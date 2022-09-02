@@ -26,8 +26,8 @@ function sortCategories(criteria, array){
             let aCount = parseInt(a.productCount);
             let bCount = parseInt(b.productCount);
 
-            if ( aCount > bCount ){ return -1; }
-            if ( aCount < bCount ){ return 1; }
+            if ( aCount > bCount ){ return -1;}
+            if ( aCount < bCount ){ return 1;}
             return 0;
         });
     }

@@ -39,3 +39,13 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+  let a = localStorage.getItem("Usuario");
+  if (a!=""){
+      document.querySelector(".profile").innerHTML= a
+  }else{
+      alert("asas")
+      location.href= "logim.html"
+  }
+})
